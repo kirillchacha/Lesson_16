@@ -1,0 +1,419 @@
+/*=====================================================================================================*/
+
+* {
+	font-family: "lato", sans-serif;
+	color: #1E212C;
+	line-height: 160%;
+	font-weight: 400;
+}
+
+[class*="__container"]{
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.wrapper{
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+/*=====================================================================================================*/
+
+.header {
+	background-color: rgb(49, 252, 49);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+.header__container {
+}
+
+.header__menu {
+}
+
+.menu {
+
+}
+
+.menu__body {
+	padding: 15px;
+}
+
+.menu__list {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	gap: 60px;
+}
+
+.menu__item {
+}
+
+.menu__link {
+	font-family: "Larsseit";
+	font-size: 20px;
+	font-weight: 900;
+	padding: 15px 0 15px 0;
+}
+
+.menu__link:hover {
+	color: rgb(95, 88, 23);
+	text-decoration: underline;
+}
+
+/*=====================================================================================================*/
+
+.page {
+}
+
+.page__subject {
+}
+
+.page__test-form {
+}
+
+.page__layout {
+}
+
+.page__checking-requests {
+}
+
+.subject-page {
+	padding: 90px 0 30px 0;
+}
+
+.subject-page__container {
+}
+
+.subject-page__headline {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.test-form-page {
+	
+}
+
+.test-form-page__container {
+}
+
+.test-form-page__headline {
+	text-align: center;
+	font-size: 22px;
+	margin-bottom: 20px;
+}
+
+.test-form-page__text {
+	text-align: center;
+}
+
+.test-form-page__form {
+}
+
+.test-form-page__paragraph {
+}
+
+.text-test-form-page {
+
+}
+
+.text-test-form-page_color-orange {
+	color: rgb(255, 166, 0);
+}
+
+.text-test-form-page_color-green {
+	color: rgb(137, 207, 137);
+}
+
+.paragraph-test-form-page {
+
+}
+
+.paragraph-test-form-page__text {
+}
+
+.form-test-form-page {
+}
+
+.form-test-form-page__headline {
+	text-align: center;
+	font-size: 22px;
+	margin: 20px 0;
+}
+
+.form-test-form-page__text {
+	text-align: center;
+}
+
+.form-test-form-page__line {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.form-test-form-page__input {
+	display: inline-block;
+}
+
+.form-test-form-page__input_chk {
+}
+	
+
+.form-test-form-page__paragraph {
+}
+
+.form-test-form-page__label {
+}
+
+.form-test-form-page__checkbox {
+	display:inline-block;
+}
+
+.form-test-form-page__title {
+}
+
+.text-form-test-form-page {
+
+}
+
+.text-form-test-form-page_color-orange {
+	color: rgb(255, 166, 0);
+}
+
+.text-form-test-form-page_color-green {
+	color: rgb(137, 207, 137);
+}
+
+.paragraph-form-test-form-page {
+
+}
+
+.paragraph-form-test-form-page__text {
+	padding-left: 360px;
+}
+
+.form {
+
+}
+
+.form__input {
+	
+}
+
+.form__input_radio {
+}
+
+.form__label {
+}
+
+.layout-page {
+	padding: 180px 0;
+}
+
+.layout-page__container {
+	display: flex;
+}
+
+.layout-page__image img {
+	width: 435px;
+	height: 481px;
+}
+
+.layout-page__block {
+}
+
+.block-layout-page {
+	padding-left: 105px;
+}
+
+.block-layout-page__headline {
+	font-weight: 700;
+	line-height: 150%;
+	text-align: center;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+.block-layout-page__text {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.block-layout-page__form {
+}
+
+.form-block-layout-page {
+
+}
+
+.form-block-layout-page__content {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 24px;
+	column-gap: 25px;
+	margin-bottom: 24px;
+}
+
+.form-block-layout-page__line {
+	flex: 0 1 48%;
+}
+
+.form-block-layout-page__line2 {
+	margin-bottom: 48px;
+}
+
+.form-block-layout-page__line3 {
+	position: relative;
+	display: flex;
+	flex: 1 1 45%;
+}
+
+.form-block-layout-page__input {
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 13px 16px;
+}
+
+.form-block-layout-page__input-checkbox {
+	position: absolute;
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+.form-block-layout-page__input-checkbox:focus + .form-block-layout-page__label3::before {
+	background: #FF3F3A url('../img/check.svg') center / 70% no-repeat;
+	border: 1px solid #FF3F3A;
+	border-radius: 3px;
+}
+
+.form-block-layout-page__input-checkbox_color-orange {
+}
+
+.form-block-layout-page__textarea {
+	border: 1px solid #D7DADD;
+	border-radius: 4px;
+	padding: 13px 0 89px 16px;
+	width: 705px;
+}
+
+.form-block-layout-page__block {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.form-block-layout-page__label {
+	display: inline-block;
+	color: #424551;
+}
+
+.form-block-layout-page__label2 {
+	display: block;
+}
+
+.form-block-layout-page__label3 {
+	cursor: pointer;
+display: inline-flex;
+align-items: center;
+gap: 15px;
+}
+
+.form-block-layout-page__label3::before {
+	content: "";
+	flex: 0 0 20px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #FF3F3A;
+	border-radius: 3px;
+}
+
+.form-block-layout-page__button {
+	flex: 0 1 46%;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	line-height: 1.25;
+	padding: 16px 40px;
+	color: #fff;
+	display: inline-block;
+}
+
+.form-block-layout-page__button:hover {
+	background: linear-gradient(55.95deg, #eb7d7a 0%, #f8965e 100%);
+}
+
+.checking-requests-page {
+
+}
+
+.checking-requests-page__container {
+}
+
+.checking-requests-page__form {
+}
+
+.checking-requests-page__line {
+}
+
+.checking-requests-page__label {
+}
+
+.checking-requests-page__input {
+	
+}
+
+.checking-requests-page__input_radio {
+}
+
+.checking-requests-page__checkbox {
+}
+
+.checking-requests-page__title {
+}
+
+.checking-requests-page__radio {
+}
+
+.checking-requests-page__button {
+}
+
+.checkbox {
+
+}
+
+.checkbox__text {
+}
+
+
+/*=====================================================================================================*/
+
+.footer {
+	background-color: rgb(106, 149, 243);
+	padding: 15px;
+}
+
+.footer__container {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+
+.footer__copyright {
+
+}
+
+
+
+

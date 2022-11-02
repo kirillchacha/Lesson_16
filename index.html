@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+
+		<!-- Практична робота №16-->
+
+		<!-- 1) Пропрацьовуємо кожен елемент форми.
+			  2) Верстаємо форму з макету з додавання кастомних radio кнопок -->
+		<div class="wrapper">
+			<header class="header">
+					<div class="header__container">
+						<div class="header__menu menu">
+							<div class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#" class="menu__link">Головна</a></li>
+									<li class="menu__item"><a href="#makets" class="menu__link">форма з макету</a></li>
+									<li class="menu__item"><a href="#checking-requests-01" class="menu__link">Перевірка запитів з форм</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			</header>
+			<main class="page">
+				<!-- ЗАВДАННЯ 1: Пропрацьовуємо кожен елемент форми -->
+				<section class="page__subject subject-page">
+					<div class="subject-page__container">
+						<h1 class="subject-page__headline">Перевірка та вивчення кожного елемента форми</h1>
+					</div>
+				</section>
+				<section class="page__test-form test-form-page">
+					<div class="test-form-page__container">
+						<h2 class="test-form-page__headline">Form - Головний (батьківський) блок форми, записується так:</h2>
+						<p class="test-form-page__text">&LT;form <span class="test-form-page__text text-test-form-page_color-orange">class</span>=<span class="test-form-page__text text-test-form-page_color-green">"form" </span><span class="test-form-page__text text-test-form-page_color-orange">enctype</span>=<span class="test-form-page__text text-test-form-page_color-green">"multipart/form-data" </span><span class="test-form-page__text text-test-form-page_color-orange">action</span>=<span class="test-form-page__text text-test-form-page_color-green">"#"</span>&GT;&LT;form&GT;</p>
+						<form class="test-form-page__form" enctype="multipart/form-data" action="#"></form>
+						<div class="test-form-page__paragraph paragraph-test-form-page">
+							<p class="paragraph-test-form-page__text">де Атрибут enctype - це кодування даних під час відправки на сервер. Для передачі файлів використовуємо - multipart/form-data</p>
+							<p class="paragraph-test-form-page__text">Атрибут action - "адреса" сервера. Не може бути пустим, варто ставити заглушку (#).</p>
+							<p class="paragraph-test-form-page__text">Атрибут method - метод передачі даних GET (за замовченням) - безпосередньо в адресному рядку; POST - приховано</p>
+						</div>
+						<form action="" class="test-form-page__form form-test-form-page">
+							<h2 class="form-test-form-page__headline">input - Елемент вводу даних</h2>
+							<p class="form-test-form-page__text">&LT;input <span class="form-test-form-page__text text-form-test-form-page_color-orange">class</span>=<span class="form-test-form-page__text text-form-test-form-page_color-green">"form-test-form-page__input" </span><span class="form-test-form-page__text text-form-test-form-page_color-orange">id</span>=<span class="form-test-form-page__text text-form-test-form-page_color-green">"name-01" </span><span class="form-test-form-page__text text-form-test-form-page_color-orange">autocomplete</span>=<span class="form-test-form-page__text text-form-test-form-page_color-green">"off" </span><span class="form-test-form-page__text text-form-test-form-page_color-orange">placeholder</span>= <span class="form-test-form-page__text text-form-test-form-page_color-green">"Введіть ваше ім'я" </span><span class="form-test-form-page__text text-form-test-form-page_color-orange">name</span>= <span class="form-test-form-page__text text-form-test-form-page_color-green">"name" </span><span class="form-test-form-page__text text-form-test-form-page_color-orange">type</span>=<span class="form-test-form-page__text text-form-test-form-page_color-green">"text"</span>&GT;</p>
+							<div class="form-test-form-page__line">
+								<input class="form-test-form-page__input" id="name-01" autocomplete="off" placeholder="Введіть ваше ім'я" name="name" type="text">
+							</div>
+							<div class="form-test-form-page__paragraph paragraph-form-test-form-page">
+								<p class="paragraph-form-test-form-page__text">де Атрибут type - тип елементу вводу даних</p>
+								<p class="paragraph-form-test-form-page__text">Атрибут name - ім'я поля (даних)</p>
+								<p class="paragraph-form-test-form-page__text">Атрибут value - значення поля (дані)</p>
+								<p class="paragraph-form-test-form-page__text">Атрибут placeholder - підпис поля</p>
+								<p class="paragraph-form-test-form-page__text">Атрибут autocomplete - дозволяє (за замовченням) / забороняє (значення off) автозаповнення поля</p>
+								<p class="paragraph-form-test-form-page__text">Атрибут required - обо'язково для заповнення</p>
+								<p class="paragraph-form-test-form-page__text">Атрибут tabindex - керує навігацією за допомогою TAB</p>
+								<p class="paragraph-form-test-form-page__text">Атрибут checked (для деяких типів) - вибраний за замовченням</p>
+							</div>
+							<h2 class="form-test-form-page__headline">label - Окремий підпис поля вводу</h2>
+							<p class="form-test-form-page__text">&LT;label <span class="form-test-form-page__text text-form-test-form-page_color-orange">class</span>=<span class="form-test-form-page__text text-form-test-form-page_color-green">"form-test-form-page__label" </span><span class="form-test-form-page__text text-form-test-form-page_color-orange">for</span>=<span class="form-test-form-page__text text-form-test-form-page_color-green">""</span>&GT;</p>
+							<div class="form-test-form-page__line">
+								<label class="form-test-form-page__label" for="">Я окремий підпис</label>
+							</div>
+							<div class="form-test-form-page__paragraph paragraph-form-test-form-page">
+								<p class="paragraph-form-test-form-page__text">рядковий тег</p>
+								<p class="paragraph-form-test-form-page__text">де Атрибут for - закріплення тексту до input</p>
+							</div>
+							
+							<div class="form-test-form-page__line">
+								<label for="name-02" class="form-test-form-page__label">Введіть ім'я</label>
+								<input id="name-02" required autocomplete="off" type="text" name="name" placeholder="Введіть ім'я" class="form-test-form-page__input">
+							</div>
+							<div class="form-test-form-page__line">
+								<label for="name" class="form-test-form-page__label">Введіть пароль</label>
+								<input id="name" required autocomplete="off" type="password" name="pass" placeholder="Введіть пароль" class="form-test-form-page__input">
+							</div>
+							<div class="form-test-form-page__line">
+								<div class="form-test-form-page__checkbox">
+									<label class="form-test-form-page__label" for="car-01">У Вас є гроші?</label>
+									<input id="car-01" class="form-test-form-page__input form-test-form-page__input_chk" required autocomplete="off" name="car" type="checkbox">
+								</div>
+							</div>
+							<div class="form-test-form-page__line">
+								<div class="form-test-form-page__checkbox">
+									<label class="form-test-form-page__label" for="home-01">Є де їсти?</label>
+									<input id="home-01" checked class="form-test-form-page__input form-test-form-page__input_chk" required autocomplete="off" name="car" type="checkbox">
+								</div>
+							</div>
+							<div class="form-test-form-page__line">
+								<div class="form-test-form-page__checkbox">
+									<label class="form-test-form-page__label" for="home-01">Є де спати?</label>
+									<input id="home-01" checked class="form-test-form-page__input form-test-form-page__input_chk" required autocomplete="off" name="car" type="checkbox">
+								</div>
+							</div>
+							<div class="form-test-form-page__line">
+								<div class="form-test-form-page__title">Список тварин:</div>
+								<select multiple name="form-test-form-page__list">
+									<option value="1">Кіт</option>
+									<option value="2">Собака</option>
+									<option value="3">Корови</option>
+									<option value="4">Кури</option>
+									<option value="5">Свині</option>
+								</select>
+							</div>
+							<div class="form-test-form-page__line">
+								<div class="form-test-form-page__title">Виберіть мову:</div>
+								<div class="form-test-form-page__line">
+									<label class="form-test-form-page__label" for="lan-01">Українська</label>
+									<input checked class="form-test-form-page__input form__input_radio" id="lan-01" required autocomplete="off" value="lan-ua" name="pet" type="radio">
+								</div>
+								<div class="form-test-form-page__line">
+									<label class="form__label" for="lan-02">мову кацапів (мова орків ru)</label>
+									<input class="form__input form__input_radio" id="lan-02" required autocomplete="off" name="pet" value="lan-ru" type="radio">
+								</div>
+								<div class="form-test-form-page__line">
+									<label class="form__label" for="lan-03">English</label>
+									<input class="form__input form__input_radio" id="lan-03" required autocomplete="off" name="pet" value="lan-en" type="radio">
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+				<section id="makets" class="page__layout layout-page">
+					<div class="layout-page__container">
+						<div class="layout-page__image">
+							<img src="img/illustration.svg" alt="">
+						</div>
+						<div class="layout-page__block block-layout-page">
+							<h3 class="block-layout-page__headline">Any questions?</h3>
+							<p class="block-layout-page__text">Drop us a line</p>
+							<form class="block-layout-page__form form-block-layout-page" action="#" method="post">
+								<div class="form-block-layout-page__content">
+									<div class="form-block-layout-page__line">
+										<label for="" class="form-block-layout-page__label">First Name*</label>
+										<input autocomplete="off" type="text" name="" data-error="Ошибка" placeholder="Your first name" required class="form-block-layout-page__input">
+									</div>
+									<div class="form-block-layout-page__line">
+										<label for="" class="form-block-layout-page__label">Last  Name*</label>
+										<input autocomplete="off" type="text" name="" data-error="Ошибка" placeholder="Your last name" required class="form-block-layout-page__input">
+									</div>
+
+									<div class="form-block-layout-page__line">
+										<label for="" class="form-block-layout-page__label">Email*</label>
+										<input autocomplete="off" type="email" name="" data-error="Ошибка" placeholder="Your working email" required class="form-block-layout-page__input">
+									</div>
+									<div class="form-block-layout-page__line">
+										<label for="" class="form-block-layout-page__label">Phone</label>
+										<input autocomplete="off" type="tel" name="" data-error="Ошибка" placeholder="Your phone number" class="form-block-layout-page__input">
+									</div>
+								</div>
+								<div class="form-block-layout-page__line2">
+									<label for="" class="form-block-layout-page__label2">Message*</label>
+									<textarea autocomplete="off" type="text" name="" data-error="Ошибка" placeholder="Your message" required class="form-block-layout-page__textarea"></textarea>
+								</div>
+								<div class="form-block-layout-page__block">
+									<div class="form-block-layout-page__line3">
+										<input id="checkbox-01" class="form-block-layout-page__input-checkbox form-block-layout-page__input-checkbox_color-orange" required autocomplete="off" name="checkbox" type="checkbox">
+										<label class="form-block-layout-page__label3" for="checkbox-01">I agree to receive communications from Createx Online School</label>
+									</div>
+									<button type="submit" class="form-block-layout-page__button">Send message</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+				<section id="checking-requests-01" class="page__checking-requests checking-requests-page">
+					<div class="checking-requests-page__container">
+						<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="checking-requests-page__form">
+							<div class="checking-requests-page__line">
+								<label for="email-01" class="checking-requests-page__label">Введіть ваш E-mail</label>
+								<input class="form__input" id="email-01" autocomplete="off" placeholder="Введіть ваш E-mail" name="mail" type="email">
+							</div>
+							<div class="checking-requests-page__line">
+								<label for="name" class="checking-requests-page__label">Введіть пароль</label>
+								<input id="name" required autocomplete="off" type="password" name="pass" placeholder="Введіть пароль" class="checking-requests-page__input">
+							</div>
+							<div class="checking-requests-page__line">
+								<div class="checking-requests-page__checkbox">
+									<input id="car" autocomplete="off" type="checkbox" value="yes" name="car" class="checking-requests-page__input">
+									<label for="car" class="checking-requests-page__label"><span class="checkbox__text">Є телефон?</span></label>
+								</div>
+							</div>
+							<div class="checking-requests-page__line">
+								<select multiple name="list">
+									<option value="1">Пункт 1</option>
+									<option value="2">Пункт 2</option>
+									<option value="3">Пункт 3</option>
+									<option value="4">Пункт 4</option>
+									<option value="5">Пункт 5</option>
+								</select>
+							</div>
+							<div class="checking-requests-page__line">
+								<div class="checking-requests-page__title">Улюблена тваринка</div>
+								<div class="checking-requests-page__radio">
+									<input checked class="checking-requests-page__input" id="pet-01" required autocomplete="off" value="cows" name="pet" type="radio">
+									<label class="checking-requests-page__label" for="pet-01">Корови</label>
+								</div>
+								<div class="checking-requests-page__radio">
+									<input class="checking-requests-page__input checking-requests-page__input_radio" id="pet-02" required autocomplete="off" name="pet" value="sheep" type="radio">
+									<label class="checking-requests-page__label" for="pet-02">Овечки</label>
+								</div>
+							</div>
+							<div class="checking-requests-page__line">
+								<label class="checking-requests-page__label" for="tel-02">Введіть номер телефону</label>
+								<input class="checking-requests-page__input" type="tel" name="tel" id="tel-02">
+							</div>
+							<div class="checking-requests-page__line">
+								<button type="submit" class="checking-requests-page__button">Надіслати</button>
+								<input type="hidden" value="klfeaw4hnd" name="iam-hidden">
+							</div>
+						</form>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+					<div class="footer__container">
+						<p class="footer__copyright">&copy; kirillchacha &vert; 2022</p>
+					</div>
+			</footer>
+		</div>
+	</body>
+</html>
